@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="GradeMate เครื่องมือคำนวณ GPA, GPAX, เกรด และวางแผนเป้าหมาย GPA สำหรับนักเรียนและนักศึกษา พร้อมบันทึกประวัติการเรียน"
+    >
+
+    <meta property="og:title" content="GradeMate - คำนวณ GPA, GPAX และวางแผนเกรด">
+    <meta property="og:description" content="รวมเครื่องมือคำนวณ GPA, GPAX, เกรด และวางแผนเป้าหมาย GPA ไว้ในที่เดียว">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GradeMate - คำนวณ GPA, GPAX และวางแผนเกรด">
+    <meta name="twitter:description" content="รวมเครื่องมือคำนวณ GPA, GPAX, เกรด และวางแผนเป้าหมาย GPA ไว้ในที่เดียว">
+
+    <meta name="theme-color" content="#2563eb">
+
+    <title>GradeMate - คำนวณ GPA, GPAX และวางแผนเกรด</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">GradeMate</a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#gpa">GPA</a>
+                <a href="#gpax">GPAX</a>
+                <a href="#history">ประวัติ</a>
+                <a href="#target">เป้าหมาย GPA</a>
+                <a href="#grade">คำนวณเกรด</a>
+                <a href="#about">เกี่ยวกับ</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="site-main">
+
+
+    <section class="landing" id="home">
+        <div class="landing-container">
+
+            <div class="landing-copy">
+                <span class="landing-badge">✦ เครื่องมือช่วยวางแผนผลการเรียน</span>
+                <h1>
+                    คำนวณ GPA ได้ง่าย<br>
+                    <span>วางแผนเกรดได้อย่างมั่นใจ</span>
+                </h1>
+                <p>
+                    รวมเครื่องมือคำนวณ GPA, GPAX, เกรด และวางแผนเป้าหมายการเรียนไว้ในที่เดียว
+                </p>
+
+                <div class="landing-actions">
+                    <a class="landing-btn primary" href="#gpa">เริ่มคำนวณเลย</a>
+                    <a class="landing-btn secondary" href="#tools">ดูเครื่องมือทั้งหมด</a>
+                </div>
+            </div>
+
+            <div class="landing-visual" aria-label="ตัวอย่างสรุปผลการเรียน">
+                <div class="mockup-window">
+                    <div class="mockup-topbar" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-content">
+                        <span class="mockup-label">ภาพรวมผลการเรียน</span>
+                        <strong>3.42</strong>
+                        <div class="mockup-chart" aria-hidden="true">
+                            <span style="height: 42%"></span>
+                            <span style="height: 58%"></span>
+                            <span style="height: 51%"></span>
+                            <span style="height: 76%"></span>
+                            <span style="height: 88%"></span>
+                        </div>
+                        <div class="mockup-footer">
+                            <span>GPAX ล่าสุด</span>
+                            <b>+0.28</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="feature-section" id="tools">
+        <div class="feature-container">
+            <div class="section-heading feature-heading">
+                <span class="dashboard-badge">TOOLS</span>
+                <h2>เครื่องมือของ GradeMate</h2>
+                <p>เลือกเครื่องมือที่เหมาะกับเป้าหมายการเรียนของคุณ</p>
+            </div>
+
+            <div class="feature-grid">
+                <a class="feature-card" href="#gpa">
+                    <span class="feature-icon" aria-hidden="true">📊</span>
+                    <h3>GPA Calculator</h3>
+                    <p>คำนวณเกรดเฉลี่ยรายเทอมจากรายวิชาและหน่วยกิต</p>
+                    <span class="feature-link">เริ่มใช้งาน →</span>
+                </a>
+
+                <a class="feature-card" href="#gpax">
+                    <span class="feature-icon" aria-hidden="true">🎓</span>
+                    <h3>GPAX Calculator</h3>
+                    <p>รวม GPA หลายภาคการศึกษาเพื่อดูเกรดเฉลี่ยสะสม</p>
+                    <span class="feature-link">เริ่มใช้งาน →</span>
+                </a>
+
+                <a class="feature-card" href="#target">
+                    <span class="feature-icon" aria-hidden="true">🎯</span>
+                    <h3>Target GPA</h3>
+                    <p>วางแผนว่าเทอมถัดไปต้องได้ GPA เท่าไร</p>
+                    <span class="feature-link">เริ่มใช้งาน →</span>
+                </a>
+
+                <a class="feature-card" href="#grade">
+                    <span class="feature-icon" aria-hidden="true">📝</span>
+                    <h3>Grade Calculator</h3>
+                    <p>ดูคะแนนที่ต้องทำเพิ่มเพื่อให้ถึงเกรดเป้าหมาย</p>
+                    <span class="feature-link">เริ่มใช้งาน →</span>
+                </a>
+
+                <a class="feature-card" href="#history">
+                    <span class="feature-icon" aria-hidden="true">📚</span>
+                    <h3>Semester History</h3>
+                    <p>บันทึก GPA แต่ละเทอมและดูข้อมูลย้อนหลัง</p>
+                    <span class="feature-link">เริ่มใช้งาน →</span>
+                </a>
+
+                <a class="feature-card" href="#history">
+                    <span class="feature-icon" aria-hidden="true">📈</span>
+                    <h3>GPA Insights</h3>
+                    <p>ดูแนวโน้ม GPA ค่าสูงสุด ต่ำสุด และกราฟความก้าวหน้า</p>
+                    <span class="feature-link">เริ่มใช้งาน →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="value-section">
+        <div class="value-container">
+            <div class="section-heading feature-heading">
+                <span class="dashboard-badge">WHY GRADEMATE</span>
+                <h2>ทำไมต้องใช้ GradeMate?</h2>
+            </div>
+
+            <div class="value-grid">
+                <div class="value-item">
+                    <span class="value-number" aria-hidden="true">01</span>
+                    <h3>ใช้งานง่าย</h3>
+                    <p>กรอกข้อมูลไม่กี่ช่อง แล้วเห็นผลลัพธ์ที่อ่านง่ายทันที</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-number" aria-hidden="true">02</span>
+                    <h3>ไม่ต้องติดตั้งโปรแกรม</h3>
+                    <p>เปิดเว็บแล้วเริ่มวางแผนผลการเรียนได้เลย</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-number" aria-hidden="true">03</span>
+                    <h3>ครบทั้ง GPA และ GPAX</h3>
+                    <p>คำนวณเป้าหมายเกรดและติดตามแนวโน้มได้ในที่เดียว</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-number" aria-hidden="true">04</span>
+                    <h3>ควบคุมข้อมูลได้เอง</h3>
+                    <p>ข้อมูลเก็บใน browser และสำรองหรือ Import กลับมาได้</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="steps-section">
+        <div class="steps-container">
+            <div class="section-heading feature-heading">
+                <span class="dashboard-badge">GET STARTED</span>
+                <h2>เริ่มต้นใช้งานง่าย ๆ</h2>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-item">
+                    <span class="step-number">1</span>
+                    <div><h3>กรอกข้อมูลผลการเรียน</h3><p>ใส่รายวิชา GPA หรือคะแนนที่มีอยู่</p></div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">2</span>
+                    <div><h3>ดู GPA / GPAX และแนวโน้ม</h3><p>บันทึกประวัติเพื่อเห็นภาพความก้าวหน้า</p></div>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">3</span>
+                    <div><h3>วางแผนเป้าหมาย GPA</h3><p>ใช้ผลลัพธ์กำหนดเป้าหมายในเทอมถัดไป</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="section-heading feature-heading">
+                <span class="dashboard-badge">ABOUT GRADEMATE</span>
+                <h2>เกี่ยวกับ GradeMate</h2>
+                <p>
+                    GradeMate เป็นเว็บไซต์เครื่องมือสำหรับช่วยนักเรียนและนักศึกษา
+                    คำนวณ ตรวจสอบ และวางแผนผลการเรียนได้สะดวกขึ้น
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>รวมเครื่องมือการเรียนไว้ในที่เดียว</h3>
+                    <p>
+                        ใช้ GradeMate เพื่อคำนวณ GPA, คำนวณ GPAX, คำนวณคะแนนและเกรด,
+                        วางแผนเป้าหมาย GPA, บันทึกประวัติผลการเรียน และดูแนวโน้ม GPA
+                    </p>
+                </div>
+
+                <div class="about-card" id="privacy">
+                    <h3>ข้อมูลของคุณ</h3>
+                    <p>
+                        ข้อมูลการใช้งานถูกเก็บไว้ใน browser ผ่าน localStorage ระบบปัจจุบัน
+                        ไม่มีบัญชีผู้ใช้หรือ cloud sync การเปลี่ยน browser หรือเคลียร์ข้อมูล browser
+                        อาจทำให้ข้อมูลหายได้
+                    </p>
+                    <p>
+                        คุณสามารถ Export ข้อมูลเป็นไฟล์ JSON เพื่อสำรองไว้ และ Import กลับมาได้ภายหลัง
+                    </p>
+                </div>
+
+                <div class="about-card about-wide">
+                    <h3>GradeMate คำนวณอย่างไร?</h3>
+                    <div class="calculation-list">
+                        <p><strong>GPA:</strong> คำนวณจากคะแนนเกรดและหน่วยกิตของรายวิชาในภาคการศึกษานั้น</p>
+                        <p><strong>GPAX จาก History:</strong> นำ GPA ของแต่ละเทอมคูณด้วยหน่วยกิต แล้วหารด้วยหน่วยกิตรวมของทุกเทอมที่บันทึกไว้</p>
+                        <p class="calculation-formula">GPAX = Σ(GPA × Credits) / ΣCredits</p>
+                        <p><strong>Target GPA:</strong> คำนวณ GPA ที่ต้องได้ในหน่วยกิตที่กำลังจะเรียน เพื่อให้ถึง GPAX เป้าหมาย</p>
+                        <p><strong>Grade Calculator:</strong> คำนวณคะแนนปัจจุบันจากคะแนนที่กรอก และคะแนนที่ยังต้องการเพื่อให้ถึงเกณฑ์เกรดเป้าหมาย</p>
+                    </div>
+                </div>
+
+                <div class="about-card about-wide" id="terms">
+                    <h3>ข้อกำหนดและข้อจำกัดการใช้งาน</h3>
+                    <p>
+                        GradeMate เป็นเครื่องมือช่วยคำนวณและวางแผนผลการเรียน
+                        ผลลัพธ์ขึ้นอยู่กับข้อมูลที่ผู้ใช้กรอก
+                    </p>
+                    <p>
+                        ผู้ใช้ควรตรวจสอบข้อมูลและเกณฑ์การให้คะแนนกับสถาบันการศึกษาของตน
+                        GradeMate ไม่ควรถือเป็นแหล่งอ้างอิงอย่างเป็นทางการของมหาวิทยาลัย
+                    </p>
+                    <p>
+                        ผู้ใช้เป็นผู้รับผิดชอบในการตรวจสอบข้อมูลก่อนนำไปใช้จริง
+                        เว็บไซต์ไม่ได้รับประกันผลการเรียนหรือผลลัพธ์ทางการศึกษา
+                    </p>
+                </div>
+            </div>
+
+            <a class="text-cta" href="#faq">อ่านคำถามที่พบบ่อย →</a>
+        </div>
+    </section>
+
+
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <div class="section-heading feature-heading">
+                <span class="dashboard-badge">FAQ</span>
+                <h2>คำถามที่พบบ่อย</h2>
+                <p>คำตอบสั้น ๆ สำหรับการใช้งาน GradeMate</p>
+            </div>
+
+            <div class="faq-list">
+                <details>
+                    <summary>GPA คืออะไร?</summary>
+                    <p>GPA คือค่าเฉลี่ยผลการเรียนของรายวิชาในภาคการศึกษาหนึ่ง โดยคำนวณตามเกรดและหน่วยกิตของรายวิชา</p>
+                </details>
+                <details>
+                    <summary>GPAX ต่างจาก GPA อย่างไร?</summary>
+                    <p>GPA ใช้ดูผลการเรียนของแต่ละภาคการศึกษา ส่วน GPAX ใช้ดูค่าเฉลี่ยสะสมจากหลายภาคการศึกษา ตามข้อมูลและหน่วยกิตที่บันทึกไว้</p>
+                </details>
+                <details>
+                    <summary>GradeMate คำนวณ GPAX อย่างไร?</summary>
+                    <p>GradeMate ใช้ GPA ของแต่ละเทอมคูณกับหน่วยกิต จากนั้นนำผลรวมมาหารด้วยหน่วยกิตรวม</p>
+                </details>
+                <details>
+                    <summary>สามารถกำหนดเกณฑ์เกรดเองได้ไหม?</summary>
+                    <p>ได้ ผู้ใช้สามารถกำหนดเกณฑ์คะแนนของ A, B+, B, C+, C, D+, D และ F ใน Grade Calculator</p>
+                </details>
+                <details>
+                    <summary>ข้อมูลที่กรอกถูกเก็บไว้ที่ไหน?</summary>
+                    <p>ข้อมูลของ GradeMate ถูกเก็บไว้ใน browser ของผู้ใช้ผ่าน localStorage จึงสามารถใช้งานต่อบน browser เดิมได้โดยไม่ต้องกรอกใหม่ทุกครั้ง</p>
+                </details>
+                <details>
+                    <summary>ถ้าล้างข้อมูล Browser ข้อมูล GradeMate จะหายไหม?</summary>
+                    <p>มีโอกาสหาย เพราะข้อมูลถูกเก็บไว้ใน localStorage จึงควร Export ข้อมูลเพื่อสำรองไว้ก่อน</p>
+                </details>
+                <details>
+                    <summary>เปลี่ยนคอมพิวเตอร์แล้วข้อมูลจะตามมาหรือไม่?</summary>
+                    <p>ข้อมูลจะไม่ซิงค์ไปยังเครื่องใหม่โดยอัตโนมัติ แต่สามารถ Export ข้อมูลจากเครื่องเดิม แล้ว Import ไฟล์ JSON บนเครื่องใหม่ได้</p>
+                </details>
+                <details>
+                    <summary>GradeMate ใช้บนมือถือได้ไหม?</summary>
+                    <p>ได้ เว็บไซต์ถูกออกแบบให้รองรับหน้าจอมือถือและ desktop</p>
+                </details>
+                <details>
+                    <summary>Target GPA ใช้ทำอะไร?</summary>
+                    <p>ใช้คำนวณว่าในหน่วยกิตถัดไปควรได้ GPA ประมาณเท่าใด เพื่อให้ GPAX ไปถึงเป้าหมายที่กำหนด</p>
+                </details>
+                <details>
+                    <summary>Grade Calculator ใช้ทำอะไร?</summary>
+                    <p>ใช้คำนวณคะแนนปัจจุบันและดูว่าต้องได้คะแนนเพิ่มเติมเท่าใด เพื่อให้ถึงเกณฑ์ของเกรดที่เลือก</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="dashboard">
+        <div class="dashboard-container">
+
+            <div class="dashboard-header">
+                <div>
+                    <span class="dashboard-badge">🎓 STUDENT TOOLS</span>
+                    <h2>จัดการเกรดของคุณ<br><span>ง่ายขึ้นด้วย GradeMate</span></h2>
+                    <p>
+                        เครื่องมือคำนวณ GPA, GPAX และเกรด
+                        รวมไว้ในที่เดียว
+                    </p>
+                </div>
+            </div>
+
+            <div class="dashboard-stats">
+
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div>
+                        <span>GPA ล่าสุด</span>
+                        <strong id="dashboardGPA">-</strong>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🎓</div>
+                    <div>
+                        <span>GPAX ล่าสุด</span>
+                        <strong id="dashboardGPAX">-</strong>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📚</div>
+                    <div>
+                        <span>ข้อมูลที่บันทึก</span>
+                        <strong id="dashboardDataCount">-</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="backup-card">
+
+                <div class="backup-header">
+                    <div>
+                        <h3>💾 สำรองข้อมูล</h3>
+                        <p>บันทึกข้อมูล GradeMate ไว้ในไฟล์ เพื่อป้องกันข้อมูลสูญหาย</p>
+                    </div>
+                </div>
+
+                <div class="backup-actions">
+
+                    <button
+                        class="backup-btn export"
+                        onclick="exportGradeMateData()"
+                    >
+                        📥 Export ข้อมูล
+                    </button>
+
+                    <button
+                        class="backup-btn import"
+                        onclick="document.getElementById('importFile').click()"
+                    >
+                        📤 Import ข้อมูล
+                    </button>
+
+                    <input
+                        type="file"
+                        id="importFile"
+                        aria-label="เลือกไฟล์สำรอง GradeMate"
+                        accept=".json,application/json"
+                        style="display:none"
+                        onchange="importGradeMateData(event)"
+                    >
+
+                </div>
+
+                <div id="backupStatus" class="backup-status"></div>
+
+            </div>
+
+            <div class="dashboard-cards">
+
+                <a href="#gpa" class="dashboard-card">
+                    <div class="dashboard-icon">📊</div>
+                    <div>
+                        <h3>GPA Calculator</h3>
+                        <p>คำนวณเกรดเฉลี่ยรายเทอม</p>
+                    </div>
+                    <span class="card-arrow">→</span>
+                </a>
+
+                <a href="#gpax" class="dashboard-card">
+                    <div class="dashboard-icon">🎓</div>
+                    <div>
+                        <h3>GPAX Calculator</h3>
+                        <p>คำนวณเกรดเฉลี่ยสะสม</p>
+                    </div>
+                    <span class="card-arrow">→</span>
+                </a>
+
+                <a href="#target" class="dashboard-card">
+                    <div class="dashboard-icon">🎯</div>
+                    <div>
+                        <h3>Target GPA</h3>
+                        <p>คำนวณ GPA ที่ต้องได้</p>
+                    </div>
+                    <span class="card-arrow">→</span>
+                </a>
+
+                <a href="#grade" class="dashboard-card">
+                    <div class="dashboard-icon">📝</div>
+                    <div>
+                        <h3>Grade Calculator</h3>
+                        <p>คำนวณว่าต้องได้คะแนนเท่าไหร่</p>
+                    </div>
+                    <span class="card-arrow">→</span>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="container">
+
+        <header>
+            <div class="logo">🎓</div>
+            <h2>GradeMate</h2>
+            <p>เครื่องมือคำนวณเกรดสำหรับนักศึกษา</p>
+        </header>
+
+
+        <!-- GPA -->
+
+        <section class="card" id="gpa">
+
+            <div class="section-title">
+                <div>
+                    <h2>คำนวณ GPA</h2>
+                    <p>คำนวณเกรดเฉลี่ยของภาคการศึกษา</p>
+                </div>
+
+                <span id="courseCount">1 วิชา</span>
+            </div>
+
+
+            <div class="table-header">
+                <span>ชื่อวิชา</span>
+                <span>หน่วยกิต</span>
+                <span>เกรด</span>
+                <span></span>
+            </div>
+
+
+            <div id="courses">
+
+                <div class="course">
+
+                    <input
+                        type="text"
+                        class="subject"
+                        placeholder="เช่น Mathematics"
+                    >
+
+                    <input
+                        type="number"
+                        class="credit"
+                        placeholder="3"
+                        min="0.5"
+                        step="0.5"
+                    >
+
+                    <select
+                        class="grade"
+                        aria-label="เกรด"
+                    >
+                        <option value="4">A</option>
+                        <option value="3.5">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.5">C+</option>
+                        <option value="2">C</option>
+                        <option value="1.5">D+</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                    </select>
+
+                    <button
+                        class="remove"
+                        type="button"
+                        onclick="removeCourse(this)"
+                        aria-label="ลบรายวิชา"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="actions">
+
+                <button
+                    class="add"
+                    onclick="addCourse()"
+                >
+                    + เพิ่มรายวิชา
+                </button>
+
+                <button
+                    class="reset"
+                    onclick="resetCourses()"
+                >
+                    ล้างข้อมูล
+                </button>
+
+            </div>
+
+
+            <button
+                class="calculate"
+                onclick="calculateGPA()"
+            >
+                คำนวณ GPA
+            </button>
+
+
+            <div id="error"></div>
+
+
+            <div class="result">
+
+                <div class="result-main">
+
+                    <span>GPA ของคุณ</span>
+
+                    <strong id="result">
+                        0.00
+                    </strong>
+
+                </div>
+
+
+                <div class="stats">
+
+                    <div>
+                        <span>รายวิชา</span>
+                        <strong id="totalCourses">0</strong>
+                    </div>
+
+                    <div>
+                        <span>หน่วยกิตรวม</span>
+                        <strong id="totalCredits">0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- GPAX -->
+
+<section class="card gpax-card" id="gpax">
+
+    <div class="section-title">
+
+        <div>
+            <h2>คำนวณ GPAX</h2>
+            <p>คำนวณเกรดเฉลี่ยสะสมจากหลายภาคการศึกษา</p>
+        </div>
+
+        <span id="semesterCount">
+            0 เทอม
+        </span>
+
+    </div>
+
+
+    <div class="semester-header">
+
+        <span>ปี</span>
+        <span>เทอม</span>
+        <span>GPA</span>
+        <span>หน่วยกิต</span>
+        <span></span>
+
+    </div>
+
+
+    <div id="semesters"></div>
+
+
+    <div class="actions">
+
+        <button
+            class="add"
+            onclick="addSemester()"
+        >
+            + เพิ่มภาคการศึกษา
+        </button>
+
+        <button
+            class="reset"
+            onclick="resetSemesters()"
+        >
+            ล้างข้อมูล
+        </button>
+
+    </div>
+
+
+    <button
+        class="calculate"
+        onclick="calculateGPAX()"
+    >
+        คำนวณ GPAX
+    </button>
+
+
+    <div id="gpaxError"></div>
+
+
+    <div class="result">
+
+        <div class="result-main">
+
+            <span>GPAX ของคุณ</span>
+
+            <strong id="gpaxResult">
+                0.00
+            </strong>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div>
+                <span>ภาคการศึกษา</span>
+                <strong id="totalSemesters">0</strong>
+            </div>
+
+            <div>
+                <span>หน่วยกิตรวม</span>
+                <strong id="totalGPAXCredits">0</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- SEMESTER HISTORY -->
+
+        <section class="history-section" id="history">
+            <div class="history-container">
+
+                <div class="section-heading">
+                    <span class="dashboard-badge">📚 HISTORY</span>
+                    <h2>ประวัติการเรียน</h2>
+                    <p>บันทึก GPA ของแต่ละเทอมไว้ดูย้อนหลัง</p>
+                </div>
+
+                <div class="history-form">
+
+                    <div class="history-input">
+                        <label for="historyYear">ปีการศึกษา</label>
+                        <select id="historyYear">
+                            <option value="1">ปี 1</option>
+                            <option value="2">ปี 2</option>
+                            <option value="3">ปี 3</option>
+                            <option value="4">ปี 4</option>
+                            <option value="5">ปี 5</option>
+                            <option value="6">ปี 6</option>
+                        </select>
+                    </div>
+
+                    <div class="history-input">
+                        <label for="historySemester">ภาคการศึกษา</label>
+                        <select id="historySemester">
+                            <option value="1">เทอม 1</option>
+                            <option value="2">เทอม 2</option>
+                            <option value="3">ภาคฤดูร้อน</option>
+                        </select>
+                    </div>
+
+                    <div class="history-input">
+                        <label for="historyGPA">GPA</label>
+                        <input
+                            type="number"
+                            id="historyGPA"
+                            min="0"
+                            max="4"
+                            step="0.01"
+                            placeholder="เช่น 3.25"
+                        >
+                    </div>
+
+                    <div class="history-input">
+                        <label for="historyCredits">หน่วยกิต</label>
+                        <input
+                            type="number"
+                            id="historyCredits"
+                            min="0"
+                            max="999"
+                            step="0.5"
+                            placeholder="เช่น 18"
+                        >
+                    </div>
+
+                    <button class="history-add-btn" onclick="addHistory()">
+                        + บันทึกเทอม
+                    </button>
+
+                </div>
+
+                <div id="historyError" class="history-error"></div>
+
+                <div class="history-summary">
+                    <div>
+                        <span>เทอมทั้งหมด</span>
+                        <strong id="historyCount">0</strong>
+                    </div>
+
+                    <div>
+                        <span>GPA ล่าสุด</span>
+                        <strong id="historyLatestGPA">-</strong>
+                    </div>
+
+                    <div>
+                        <span>GPAX</span>
+                        <strong id="historyGPAX">-</strong>
+                    </div>
+                </div>
+
+                <p class="history-note">
+                    💡 GPAX คำนวณจาก GPA และหน่วยกิตของทุกเทอมที่บันทึกไว้
+                </p>
+
+                <div id="historyList" class="history-list"></div>
+
+                <div class="history-chart-card">
+
+                    <div class="chart-header">
+                        <div>
+                            <h3>📈 แนวโน้ม GPA</h3>
+                            <p>ดูการเปลี่ยนแปลง GPA ในแต่ละเทอม</p>
+                        </div>
+                    </div>
+
+                    <div class="gpa-chart-wrapper">
+                        <canvas id="gpaChart"></canvas>
+
+                        <div id="chartEmpty" class="chart-empty">
+                            เพิ่มประวัติการเรียนอย่างน้อย 1 เทอม<br>
+                            เพื่อดูกราฟ GPA
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="history-insights">
+
+                    <div class="insight-card">
+                        <span>GPA ล่าสุด</span>
+                        <strong id="insightLatest">-</strong>
+                    </div>
+
+                    <div class="insight-card">
+                        <span>GPA สูงสุด</span>
+                        <strong id="insightHighest">-</strong>
+                    </div>
+
+                    <div class="insight-card">
+                        <span>GPA ต่ำสุด</span>
+                        <strong id="insightLowest">-</strong>
+                    </div>
+
+                </div>
+
+                <div id="gpaTrend" class="gpa-trend"></div>
+
+            </div>
+        </section>
+
+
+        <!-- TARGET GPA -->
+
+        <section class="card target-card" id="target">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>🎯 ต้องได้ GPA เท่าไหร่?</h2>
+                    <p>คำนวณ GPA ที่ต้องทำเพื่อให้ถึง GPAX เป้าหมาย</p>
+                </div>
+
+            </div>
+
+
+            <div class="target-form">
+
+                <div class="form-group">
+
+                    <label for="currentGPAX">
+                        GPAX ปัจจุบัน
+                    </label>
+
+                    <input
+                        type="number"
+                        id="currentGPAX"
+                        placeholder="เช่น 2.41"
+                        min="0"
+                        max="4"
+                        step="0.01"
+                        inputmode="decimal"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="completedCredits">
+                        หน่วยกิตที่เรียนแล้ว
+                    </label>
+
+                    <input
+                        type="number"
+                        id="completedCredits"
+                        placeholder="เช่น 72"
+                        min="0"
+                        step="0.5"
+                        inputmode="decimal"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="nextCredits">
+                        หน่วยกิตที่กำลังจะเรียน
+                    </label>
+
+                    <input
+                        type="number"
+                        id="nextCredits"
+                        placeholder="เช่น 18"
+                        min="0.5"
+                        step="0.5"
+                        inputmode="decimal"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="targetGPAX">
+                        GPAX ที่ต้องการ
+                    </label>
+
+                    <input
+                        type="number"
+                        id="targetGPAX"
+                        placeholder="เช่น 2.50"
+                        min="0"
+                        max="4"
+                        step="0.01"
+                        inputmode="decimal"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="calculate"
+                onclick="calculateTargetGPA()"
+            >
+                คำนวณ GPA ที่ต้องได้
+            </button>
+
+
+            <div id="targetError"></div>
+
+
+            <div
+                class="target-result"
+                id="targetResult"
+            >
+
+                <span>
+                    GPA ที่ต้องได้
+                </span>
+
+                <strong id="requiredGPA">
+                    0.00
+                </strong>
+
+                <p id="targetMessage"></p>
+
+            </div>
+
+        </section>
+
+        <!-- GRADE CALCULATOR -->
+
+        <section class="card grade-card" id="grade">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>📊 คำนวณเกรด</h2>
+                    <p>คำนวณคะแนนรวมและดูว่าต้องได้อีกกี่คะแนน</p>
+                </div>
+
+                <span id="scoreCount">
+                    3 ส่วน
+                </span>
+
+            </div>
+
+
+            <div class="score-header">
+
+                <span>รายการคะแนน</span>
+                <span>คะแนนเต็ม</span>
+                <span>ได้คะแนน</span>
+                <span></span>
+
+            </div>
+
+
+            <div id="scores"></div>
+
+
+            <button
+                class="add-score"
+                onclick="addScore()"
+            >
+                + เพิ่มรายการคะแนน
+            </button>
+
+
+            <div class="grade-settings">
+
+                <button
+                    class="settings-button"
+                    onclick="openGradeSettings()"
+                >
+                    ⚙️ ตั้งค่าเกณฑ์เกรด
+                </button>
+
+            </div>
+
+
+            <div class="grade-target">
+
+                <label for="targetGrade">
+                    ต้องการดูเกรด
+                </label>
+
+                <select id="targetGrade">
+
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                class="calculate"
+                onclick="calculateGrade()"
+            >
+                คำนวณคะแนน
+            </button>
+
+
+            <div id="gradeError"></div>
+
+
+            <div class="grade-result">
+
+                <div class="score-summary">
+
+                    <div>
+                        <span>คะแนนปัจจุบัน</span>
+                        <strong id="currentScore">0</strong>
+                    </div>
+
+                    <div>
+                        <span>คะแนนเต็ม</span>
+                        <strong id="totalScore">0</strong>
+                    </div>
+
+                    <div>
+                        <span>เปอร์เซ็นต์</span>
+                        <strong id="scorePercent">0%</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="required-score">
+
+                    <span id="requiredTitle">
+                        คะแนนที่ต้องได้เพิ่ม
+                    </span>
+
+                    <strong id="requiredScore">0</strong>
+
+                    <p id="gradeMessage"></p>
+
+                    <div
+                        class="remaining-info"
+                        id="remainingInfo"
+                    >
+
+                        <div>
+                            <span>คะแนนที่เหลือ</span>
+                            <strong id="remainingScore">0</strong>
+                        </div>
+
+                        <div>
+                            <span>ต้องทำให้ได้</span>
+                            <strong id="requiredPercent">0%</strong>
+                        </div>
+
+                    </div>
+
+                    <div
+                        id="gradeStatus"
+                        class="grade-status"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    </main>
+
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a class="footer-logo" href="#home">GradeMate</a>
+                <p>เครื่องมือช่วยคำนวณและวางแผนผลการเรียน</p>
+                <p class="footer-description">
+                    รวมเครื่องมือ GPA, GPAX, การคำนวณเกรด และการวางแผนเป้าหมายไว้ในที่เดียว
+                </p>
+            </div>
+
+            <nav class="footer-column" aria-label="เครื่องมือ">
+                <h2>เครื่องมือ</h2>
+                <a href="#gpa">GPA</a>
+                <a href="#gpax">GPAX</a>
+                <a href="#target">เป้าหมาย GPA</a>
+                <a href="#grade">คำนวณเกรด</a>
+                <a href="#history">ประวัติการเรียน</a>
+            </nav>
+
+            <nav class="footer-column" aria-label="ข้อมูลเว็บไซต์">
+                <h2>ข้อมูล</h2>
+                <a href="#about">เกี่ยวกับ GradeMate</a>
+                <a href="#faq">FAQ</a>
+                <a href="#privacy">ข้อมูลการจัดเก็บข้อมูล</a>
+                <a href="#terms">ข้อกำหนดการใช้งาน</a>
+            </nav>
+
+            <div class="footer-column footer-backup">
+                <h2>Backup</h2>
+                <p>
+                    สำรองข้อมูลของคุณด้วย Export และนำกลับมาใช้ได้ด้วย Import
+                </p>
+                <a href="#home">กลับหน้าแรก ↑</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 GradeMate</span>
+            <span>ข้อมูลจัดเก็บใน browser ของผู้ใช้</span>
+        </div>
+    </footer>
+
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="กลับขึ้นด้านบน"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+        ↑
+    </button>
+
+
+    <div
+        id="gradeSettingsModal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="gradeSettingsTitle"
+    >
+
+        <div class="modal-box">
+
+            <div class="modal-header">
+
+                <div>
+                    <h2 id="gradeSettingsTitle">⚙️ ตั้งค่าเกณฑ์เกรด</h2>
+
+                    <p>
+                        กำหนดคะแนนขั้นต่ำของแต่ละเกรด
+                    </p>
+                </div>
+
+                <button
+                    class="modal-close"
+                    type="button"
+                    aria-label="ปิดหน้าต่างตั้งค่าเกรด"
+                    onclick="closeGradeSettings()"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="grade-settings-list">
+
+                <div class="grade-setting-row">
+                    <strong>A</strong>
+                    <input type="number" id="threshold-A" aria-label="เกณฑ์เกรด A" min="0" max="100" step="0.01">
+                    <span>คะแนนขึ้นไป</span>
+                </div>
+
+                <div class="grade-setting-row">
+                    <strong>B+</strong>
+                    <input type="number" id="threshold-Bplus" aria-label="เกณฑ์เกรด B+" min="0" max="100" step="0.01">
+                    <span>คะแนนขึ้นไป</span>
+                </div>
+
+                <div class="grade-setting-row">
+                    <strong>B</strong>
+                    <input type="number" id="threshold-B" aria-label="เกณฑ์เกรด B" min="0" max="100" step="0.01">
+                    <span>คะแนนขึ้นไป</span>
+                </div>
+
+                <div class="grade-setting-row">
+                    <strong>C+</strong>
+                    <input type="number" id="threshold-Cplus" aria-label="เกณฑ์เกรด C+" min="0" max="100" step="0.01">
+                    <span>คะแนนขึ้นไป</span>
+                </div>
+
+                <div class="grade-setting-row">
+                    <strong>C</strong>
+                    <input type="number" id="threshold-C" aria-label="เกณฑ์เกรด C" min="0" max="100" step="0.01">
+                    <span>คะแนนขึ้นไป</span>
+                </div>
+
+                <div class="grade-setting-row">
+                    <strong>D+</strong>
+                    <input type="number" id="threshold-Dplus" aria-label="เกณฑ์เกรด D+" min="0" max="100" step="0.01">
+                    <span>คะแนนขึ้นไป</span>
+                </div>
+
+                <div class="grade-setting-row">
+                    <strong>D</strong>
+                    <input type="number" id="threshold-D" aria-label="เกณฑ์เกรด D" min="0" max="100" step="0.01">
+                    <span>คะแนนขึ้นไป</span>
+                </div>
+
+                <div class="grade-setting-row">
+                    <strong>F</strong>
+                    <input type="number" id="threshold-F" aria-label="เกณฑ์เกรด F" min="0" max="100" step="0.01">
+                    <span>คะแนนขึ้นไป</span>
+                </div>
+
+            </div>
+
+
+            <div id="settingsError" class="settings-error"></div>
+
+
+            <div class="modal-actions">
+
+                <button
+                    class="reset-settings"
+                    onclick="resetGradeSettings()"
+                >
+                    คืนค่าเริ่มต้น
+                </button>
+
+                <button
+                    class="save-settings"
+                    onclick="saveGradeSettings()"
+                >
+                    บันทึก
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
